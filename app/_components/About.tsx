@@ -30,8 +30,8 @@ export default function About() {
               </p>
               <h2
                 style={{
-                  fontFamily: 'var(--font-plus-jakarta)',
-                  fontSize: 'clamp(30px, 3.5vw, 44px)',
+                  fontFamily: 'var(--font-miso)',
+                  fontSize: 'clamp(32px, 4vw, 42px)',
                   fontWeight: 400,
                   lineHeight: 1.15,
                   color: '#000000',
@@ -40,7 +40,7 @@ export default function About() {
                 Your digital identity,{' '}
                 <em style={{ fontStyle: 'italic', color: '#FF9838' }}>secured.</em>
               </h2>
-              <p className="mt-5 text-base leading-relaxed" style={{ color: '#6B7280' }}>
+              <p className="mt-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300 }}>
                 Zane360 was built for businesses that understand the internet is where trust is won or lost. We combine world-class domain registration across 50+ country-code TLDs with enterprise-grade cybersecurity services — all from a single, unified dashboard.
               </p>
               <p className="mt-4 text-base leading-relaxed" style={{ color: '#6B7280' }}>
@@ -49,8 +49,8 @@ export default function About() {
 
               <div className="mt-8 flex flex-wrap gap-4 items-center">
                 <motion.button
-                  className="flex items-center gap-2 text-sm font-medium"
-                  style={{ background: '#0F0F0F', color: '#FFFFFF', borderRadius: 300, padding: '12px 24px' }}
+                  className="flex items-center gap-2 font-semibold"
+                  style={{ background: '#0F0F0F', color: '#FFFFFF', borderRadius: 300, padding: '12px 24px', fontFamily: 'var(--font-wix)', fontSize: 14 }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
@@ -59,8 +59,8 @@ export default function About() {
                 <div className="grid grid-cols-3 gap-6 ml-2">
                   {[{ num: '500K+', label: 'Domains' }, { num: '50+', label: 'Countries' }, { num: '99.9%', label: 'Uptime' }].map(({ num, label }) => (
                     <div key={label}>
-                      <div className="text-lg font-semibold" style={{ color: '#000', fontFamily: 'var(--font-plus-jakarta)' }}>{num}</div>
-                      <div className="text-xs" style={{ color: '#9CA3AF' }}>{label}</div>
+                      <div className="text-lg font-semibold" style={{ color: '#000', fontFamily: 'var(--font-miso)' }}>{num}</div>
+                      <div style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 13 }}>{label}</div>
                     </div>
                   ))}
                 </div>

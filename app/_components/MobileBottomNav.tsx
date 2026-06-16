@@ -76,7 +76,7 @@ export default function MobileBottomNav() {
               />
               <span
                 className="relative z-10 text-[10px] font-semibold tracking-wide"
-                style={{ color: isActive ? '#FF9838' : '#9CA3AF', fontFamily: 'var(--font-inter)' }}
+                style={{ color: isActive ? '#FF9838' : '#9CA3AF', fontFamily: 'var(--font-wix)' }}
               >
                 {label}
               </span>

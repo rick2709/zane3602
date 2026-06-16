@@ -59,7 +59,7 @@ export default function Services() {
             02 / 04 — Our Services
           </p>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <h2 style={{ fontFamily: 'var(--font-plus-jakarta)', fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 400, color: '#000', maxWidth: 480 }}>
+            <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3.5vw, 42px)', fontWeight: 400, color: '#000', maxWidth: 480 }}>
               Everything you need,{' '}
               <em style={{ fontStyle: 'italic', color: '#FF9838' }}>in one place.</em>
             </h2>
@@ -98,14 +98,14 @@ export default function Services() {
                   <Icon size={20} style={{ color: '#FF9838' }} />
                 </div>
 
-                <h3 className="text-base font-semibold mb-2" style={{ color: '#000', fontFamily: 'var(--font-plus-jakarta)' }}>
+                <h3 className="mb-2" style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300 }}>
                   {service.title}
                 </h3>
-                <p className="text-sm leading-relaxed mb-5" style={{ color: '#6B7280' }}>{service.description}</p>
+                <p className="leading-relaxed mb-5" style={{ color: '#6B7280', fontFamily: 'var(--font-wix)', fontSize: 14 }}>{service.description}</p>
 
                 <ul className="flex flex-col gap-2 mb-6">
                   {service.bullets.map((b) => (
-                    <li key={b} className="flex items-center gap-2 text-sm" style={{ color: '#6B7280' }}>
+                    <li key={b} className="flex items-center gap-2" style={{ color: '#6B7280', fontFamily: 'var(--font-wix)', fontSize: 14 }}>
                       <Check size={12} style={{ color: '#FF9838', flexShrink: 0 }} />
                       {b}
                     </li>
@@ -115,8 +115,8 @@ export default function Services() {
                 <div className="mt-auto">
                   <motion.a
                     href="#"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium"
-                    style={{ color: '#FF9838' }}
+                    className="inline-flex items-center gap-1.5 font-medium"
+                    style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12 }}
                     whileHover={{ gap: '0.5rem' }}
                   >
                     Learn More <ArrowRight size={13} />

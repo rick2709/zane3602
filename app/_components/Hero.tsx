@@ -53,8 +53,8 @@ export default function Hero() {
           transition={{ delay: 0.25, duration: 0.65, ease }}
           className="text-center mb-8"
           style={{
-            fontFamily: 'var(--font-plus-jakarta)',
-            fontSize: 'clamp(36px, 5.5vw, 58px)',
+            fontFamily: 'var(--font-miso)',
+            fontSize: 42,
             fontWeight: 400,
             lineHeight: 1.1,
             color: '#000000',
@@ -92,7 +92,7 @@ export default function Hero() {
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search for your perfect domain…"
                 className="flex-1 py-3 text-sm outline-none bg-transparent"
-                style={{ color: '#000', fontFamily: 'var(--font-inter)' }}
+                style={{ color: '#000', fontFamily: 'var(--font-wix)' }}
               />
             </div>
             <motion.button

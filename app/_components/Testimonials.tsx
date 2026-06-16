@@ -61,7 +61,7 @@ export default function Testimonials() {
           <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
             Testimonials
           </p>
-          <h2 style={{ fontFamily: 'var(--font-plus-jakarta)', fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 400, color: '#000' }}>
+          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3.5vw, 42px)', fontWeight: 400, color: '#000' }}>
             Trusted by{' '}
             <em style={{ fontStyle: 'italic', color: '#FF9838' }}>leaders.</em>
           </h2>
@@ -89,8 +89,8 @@ export default function Testimonials() {
               </div>
 
               <p
-                className="text-xl sm:text-2xl leading-relaxed font-light mb-8"
-                style={{ color: '#000', fontFamily: 'var(--font-plus-jakarta)' }}
+                className="leading-relaxed mb-8"
+                style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300 }}
               >
                 &ldquo;{t.quote}&rdquo;
               </p>
@@ -100,8 +100,8 @@ export default function Testimonials() {
                   <img src={`https://picsum.photos/seed/${t.img}/120/120`} alt={t.name} className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold" style={{ color: '#000' }}>{t.name}</div>
-                  <div className="text-xs mt-0.5" style={{ color: '#9CA3AF' }}>{t.role}</div>
+                  <div className="font-semibold" style={{ color: '#000', fontFamily: 'var(--font-wix)', fontSize: 14 }}>{t.name}</div>
+                  <div className="mt-0.5" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 13 }}>{t.role}</div>
                 </div>
               </div>
             </motion.div>

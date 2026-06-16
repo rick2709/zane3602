@@ -43,11 +43,11 @@ function StatCounter({ value, suffix, label, decimal }: {
     >
       <div
         className="text-4xl sm:text-5xl font-semibold tracking-tight mb-1"
-        style={{ color: '#FF9838', fontFamily: 'var(--font-plus-jakarta)' }}
+        style={{ color: '#FF9838', fontFamily: 'var(--font-miso)' }}
       >
         {decimal ? count.toFixed(count === value ? 1 : 0) : count}{suffix}
       </div>
-      <div className="text-sm" style={{ color: '#9CA3AF' }}>{label}</div>
+      <div style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 13 }}>{label}</div>
     </motion.div>
   )
 }
@@ -72,8 +72,8 @@ export default function StatsBand() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.07, duration: 0.4 }}
-              className="text-sm font-semibold"
-              style={{ color: '#C4C4C4', letterSpacing: '0.06em' }}
+              className="font-semibold"
+              style={{ color: '#C4C4C4', letterSpacing: '0.06em', fontFamily: 'var(--font-wix)', fontSize: 14 }}
             >
               {name}
             </motion.span>

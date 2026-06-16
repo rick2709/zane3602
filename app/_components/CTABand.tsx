@@ -63,8 +63,8 @@ export default function CTABand() {
 
           <h2
             style={{
-              fontFamily: 'var(--font-plus-jakarta)',
-              fontSize: 'clamp(30px, 4vw, 48px)',
+              fontFamily: 'var(--font-miso)',
+              fontSize: 'clamp(36px, 4vw, 48px)',
               fontWeight: 400,
               lineHeight: 1.15,
               color: '#000',
@@ -75,7 +75,7 @@ export default function CTABand() {
             <em style={{ fontStyle: 'italic', color: '#FF9838' }}>Total protection.</em>
           </h2>
 
-          <p className="text-base leading-relaxed mb-8 max-w-md mx-auto" style={{ color: '#6B7280' }}>
+          <p className="leading-relaxed mb-8 max-w-md mx-auto" style={{ color: '#6B7280', fontFamily: 'var(--font-wix)', fontSize: 14 }}>
             Join 500,000+ businesses that trust Zane360 to secure their domains and defend their digital infrastructure.
           </p>
 
@@ -97,7 +97,7 @@ export default function CTABand() {
             />
             <motion.button
               className="flex items-center justify-center gap-2 text-sm font-medium whitespace-nowrap"
-              style={{ background: '#0F0F0F', color: '#FFFFFF', borderRadius: 12, padding: '12px 20px' }}
+              style={{ background: '#0F0F0F', color: '#FFFFFF', borderRadius: 12, padding: '12px 20px', fontFamily: 'var(--font-wix)', fontSize: 14, fontWeight: 600 }}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >

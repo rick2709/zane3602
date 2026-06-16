@@ -25,7 +25,7 @@ export default function Footer() {
               >
                 <Layers size={15} color="#FFFFFF" />
               </div>
-              <span className="text-base font-semibold" style={{ color: '#000', fontFamily: 'var(--font-plus-jakarta)' }}>
+              <span className="text-base font-semibold" style={{ color: '#000', fontFamily: 'var(--font-wix)' }}>
                 Zane360
               </span>
             </div>
@@ -40,8 +40,9 @@ export default function Footer() {
               <h4
                 className="mb-4"
                 style={{
-                  fontSize: 11,
-                  fontWeight: 600,
+                  fontFamily: 'var(--font-wix)',
+                  fontSize: 16,
+                  fontWeight: 700,
                   textTransform: 'uppercase',
                   letterSpacing: '0.10em',
                   color: '#232529',
@@ -54,8 +55,7 @@ export default function Footer() {
                   <li key={link}>
                     <motion.a
                       href="#"
-                      className="text-sm"
-                      style={{ color: '#000', textDecoration: 'none' }}
+                      style={{ color: '#000', textDecoration: 'none', fontFamily: 'var(--font-wix)', fontSize: 16, fontWeight: 400 }}
                       whileHover={{ textDecoration: 'underline' }}
                       transition={{ duration: 0.15 }}
                     >

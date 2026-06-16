@@ -43,7 +43,7 @@ export default function Gallery() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
               In Action
             </p>
-            <h2 style={{ fontFamily: 'var(--font-plus-jakarta)', fontSize: 'clamp(26px, 3vw, 38px)', fontWeight: 400, color: '#000' }}>
+            <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3vw, 38px)', fontWeight: 400, color: '#000' }}>
               Infrastructure built for{' '}
               <em style={{ fontStyle: 'italic', color: '#FF9838' }}>scale.</em>
             </h2>
@@ -114,7 +114,7 @@ export default function Gallery() {
               />
               <span
                 className="absolute bottom-3 left-4 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                style={{ color: 'rgba(255,255,255,0.90)', fontFamily: 'var(--font-inter)' }}
+                style={{ color: 'rgba(255,255,255,0.90)', fontFamily: 'var(--font-wix)' }}
               >
                 {img.alt}
               </span>
@@ -125,7 +125,7 @@ export default function Gallery() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 flex justify-end">
-        <span className="text-xs" style={{ color: '#9CA3AF', fontFamily: 'var(--font-geist-mono)' }}>
+        <span className="text-xs" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)' }}>
           ← drag to explore →
         </span>
       </div>

@@ -36,8 +36,7 @@ function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
         style={{ background: 'none', border: 'none', cursor: 'pointer' }}
       >
         <span
-          className="text-lg font-normal"
-          style={{ color: '#000', fontFamily: 'var(--font-plus-jakarta)', lineHeight: 1.4 }}
+          style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300, lineHeight: 1.4 }}
         >
           {q}
         </span>
@@ -60,7 +59,7 @@ function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
           >
-            <p className="pb-5 text-base leading-relaxed" style={{ color: '#6B7280' }}>{a}</p>
+            <p className="pb-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-wix)', fontSize: 14 }}>{a}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -82,7 +81,7 @@ export default function FAQ() {
           <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
             FAQ
           </p>
-          <h2 style={{ fontFamily: 'var(--font-plus-jakarta)', fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 400, color: '#000' }}>
+          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3.5vw, 42px)', fontWeight: 400, color: '#000' }}>
             Common{' '}
             <em style={{ fontStyle: 'italic', color: '#FF9838' }}>questions.</em>
           </h2>

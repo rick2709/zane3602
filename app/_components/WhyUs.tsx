@@ -37,16 +37,16 @@ export default function WhyUs() {
               <p className="text-xs font-semibold uppercase tracking-widest mb-6" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
                 03 / 04 — Why Zane360
               </p>
-              <h2 style={{ fontFamily: 'var(--font-plus-jakarta)', fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 400, lineHeight: 1.15, color: '#000' }}>
+              <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3.5vw, 42px)', fontWeight: 400, lineHeight: 1.15, color: '#000' }}>
                 The platform that{' '}
                 <em style={{ fontStyle: 'italic', color: '#FF9838' }}>never sleeps.</em>
               </h2>
-              <p className="mt-5 text-base leading-relaxed" style={{ color: '#6B7280' }}>
+              <p className="mt-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300 }}>
                 We designed Zane360 around one principle: your digital assets deserve the same level of protection as your physical ones. Every feature exists to give you certainty.
               </p>
               <motion.button
-                className="mt-8 flex items-center gap-2 text-sm font-medium"
-                style={{ background: '#0F0F0F', color: '#FFFFFF', borderRadius: 300, padding: '12px 24px' }}
+                className="mt-8 flex items-center gap-2 font-semibold"
+                style={{ background: '#0F0F0F', color: '#FFFFFF', borderRadius: 300, padding: '12px 24px', fontFamily: 'var(--font-wix)', fontSize: 14 }}
                 whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
               >
                 View All Features <ArrowRight size={14} />
@@ -90,8 +90,8 @@ export default function WhyUs() {
                     >
                       <Icon size={18} style={{ color: '#FF9838' }} />
                     </div>
-                    <h3 className="text-sm font-semibold mb-2" style={{ color: '#000', fontFamily: 'var(--font-plus-jakarta)' }}>{f.title}</h3>
-                    <p className="text-xs leading-relaxed" style={{ color: '#6B7280', lineHeight: 1.65 }}>{f.description}</p>
+                    <h3 className="mb-2" style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 16, fontWeight: 300 }}>{f.title}</h3>
+                    <p className="leading-relaxed" style={{ color: '#6B7280', lineHeight: 1.65, fontFamily: 'var(--font-wix)', fontSize: 13 }}>{f.description}</p>
                   </motion.div>
                 )
               })}

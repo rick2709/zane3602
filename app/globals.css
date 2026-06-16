@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Miso:wght@300;400&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-plus-jakarta);
+  --font-sans: var(--font-wix);
+  --font-display: var(--font-miso);
   --font-mono: var(--font-geist-mono);
 }
 
 :root {
+  /* ── Font families ── */
+  --font-miso: 'Miso', sans-serif;
+  --font-wix:  'Wix Madefor Text', sans-serif;
+
   /* ── Base44 surfaces ── */
   --bg-page:              #FAF9F7;
   --bg-white:             #FFFFFF;
@@ -67,10 +72,36 @@
 
 html { scroll-behavior: smooth; }
 
+/* ── Base typography ── */
+h1 {
+  font-family: var(--font-miso);
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+h2 {
+  font-family: var(--font-miso);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+h3 {
+  font-family: var(--font-miso);
+  font-size: 16px;
+  font-weight: 300;
+}
+p, body {
+  font-family: var(--font-wix);
+  font-size: 14px;
+  font-weight: 400;
+}
+button {
+  font-family: var(--font-wix);
+}
+
 body {
   background-color: var(--bg-page);
   color: var(--text-primary);
-  font-family: var(--font-inter, 'Inter', sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -54,8 +54,8 @@ export default function CyberShowcase() {
           </p>
           <h2
             style={{
-              fontFamily: 'var(--font-plus-jakarta)',
-              fontSize: 'clamp(28px, 3.5vw, 44px)',
+              fontFamily: 'var(--font-miso)',
+              fontSize: 'clamp(32px, 3.5vw, 44px)',
               fontWeight: 400,
               lineHeight: 1.15,
               color: '#000',
@@ -93,8 +93,8 @@ export default function CyberShowcase() {
                 Threat Intelligence
               </p>
               <h3
-                className="text-xl font-normal text-white mb-2"
-                style={{ fontFamily: 'var(--font-plus-jakarta)', lineHeight: 1.3 }}
+                className="font-normal text-white mb-2"
+                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300, lineHeight: 1.3 }}
               >
                 Global threat monitoring, around the clock
               </h3>
@@ -123,7 +123,7 @@ export default function CyberShowcase() {
               <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#FF9838', letterSpacing: '0.10em' }}>
                 Education &amp; Compliance
               </p>
-              <h3 className="text-base font-normal text-white" style={{ fontFamily: 'var(--font-plus-jakarta)' }}>
+              <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 18, fontWeight: 300, color: '#fff' }}>
                 Security awareness for your entire team
               </h3>
             </div>
@@ -175,7 +175,7 @@ export default function CyberShowcase() {
               <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#FF9838', letterSpacing: '0.10em' }}>
                 2025 Trends
               </p>
-              <h3 className="text-base font-normal text-white" style={{ fontFamily: 'var(--font-plus-jakarta)' }}>
+              <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 18, fontWeight: 300, color: '#fff' }}>
                 Ahead of emerging threats
               </h3>
             </div>
@@ -201,7 +201,7 @@ export default function CyberShowcase() {
                   { num: '50+', label: 'Countries served' },
                 ].map(({ num, label }) => (
                   <div key={label}>
-                    <p className="text-2xl font-light text-white" style={{ fontFamily: 'var(--font-plus-jakarta)' }}>{num}</p>
+                    <p className="text-2xl font-light text-white" style={{ fontFamily: 'var(--font-miso)' }}>{num}</p>
                     <p className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.45)' }}>{label}</p>
                   </div>
                 ))}
@@ -235,8 +235,8 @@ export default function CyberShowcase() {
                 Incident Response
               </p>
               <h3
-                className="text-2xl font-normal text-white mb-2"
-                style={{ fontFamily: 'var(--font-plus-jakarta)', lineHeight: 1.3 }}
+                className="font-normal text-white mb-2"
+                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300, lineHeight: 1.3 }}
               >
                 When it matters most, we respond in 15 minutes.
               </h3>

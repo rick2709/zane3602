@@ -45,7 +45,7 @@ export default function Navbar() {
             >
               <Layers size={15} color="#FFFFFF" />
             </div>
-            <span className="text-base font-semibold" style={{ color: '#000', fontFamily: 'var(--font-plus-jakarta)' }}>
+            <span className="text-base font-semibold" style={{ color: '#000', fontFamily: 'var(--font-wix)' }}>
               Zane360
             </span>
           </a>
@@ -56,8 +56,8 @@ export default function Navbar() {
               <motion.button
                 key={link.label}
                 onClick={() => handleNav(link.href)}
-                className="px-4 py-2 text-sm rounded-full"
-                style={{ color: '#232529' }}
+                className="px-4 py-2 rounded-full"
+                style={{ color: '#232529', fontFamily: 'var(--font-wix)', fontSize: 14, fontWeight: 400 }}
                 whileHover={{ backgroundColor: '#F5F3F0' }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ duration: 0.15 }}
@@ -71,13 +71,16 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <motion.button
               onClick={() => handleNav('#contact')}
-              className="hidden sm:flex items-center text-sm font-medium"
+              className="hidden sm:flex items-center"
               style={{
                 background: '#EBFFB1',
                 border: '1px solid #ADE900',
                 borderRadius: 70,
                 padding: '9px 20px',
                 color: '#000000',
+                fontFamily: 'var(--font-wix)',
+                fontSize: 14,
+                fontWeight: 600,
               }}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
@@ -111,8 +114,8 @@ export default function Navbar() {
                 <button
                   key={link.label}
                   onClick={() => handleNav(link.href)}
-                  className="text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors"
-                  style={{ color: '#000' }}
+                  className="text-left px-4 py-3 rounded-xl transition-colors"
+                  style={{ color: '#000', fontFamily: 'var(--font-wix)', fontSize: 14, fontWeight: 400 }}
                   onMouseEnter={e => (e.currentTarget.style.background = '#F5F3F0')}
                   onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                 >
@@ -121,8 +124,8 @@ export default function Navbar() {
               ))}
               <button
                 onClick={() => handleNav('#contact')}
-                className="mt-2 w-full py-3 text-sm font-medium text-center rounded-full"
-                style={{ background: '#EBFFB1', border: '1px solid #ADE900', color: '#000' }}
+                className="mt-2 w-full py-3 text-center rounded-full"
+                style={{ background: '#EBFFB1', border: '1px solid #ADE900', color: '#000', fontFamily: 'var(--font-wix)', fontSize: 14, fontWeight: 600 }}
               >
                 Get Started
               </button>
