@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-plus-jakarta);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  /* ── Base44 surfaces ── */
+  --bg-page:              #FAF9F7;
+  --bg-white:             #FFFFFF;
+
+  /* ── Base44 accent palette ── */
+  --accent:               #FF9838;
+  --accent-hover:         #FF7A1A;
+  --accent-deep:          #FF5722;
+  --accent-soft:          rgba(255, 152, 56, 0.10);
+  --accent-green:         #EBFFB1;
+  --accent-green-border:  #ADE900;
+  --footer-bg:            #F16120;
+
+  /* ── Text ── */
+  --text-primary:         #000000;
+  --text-secondary:       #232529;
+  --text-muted:           #6B7280;
+  --text-subtle:          #9CA3AF;
+
+  /* ── Borders ── */
+  --border:               #E5E5E5;
+  --border-strong:        #D1D5DB;
+
+  /* ── Shadows ── */
+  --shadow-card:          0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-float:         0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lift:          0 8px 40px rgba(0, 0, 0, 0.10);
+
+  /* ── Backward-compat aliases ── */
+  --bg-base:              #FAF9F7;
+  --bg-soft:              #F5F3F0;
+  --bg-elevated:          #FFFFFF;
+  --bg-dark:              #0F0F0F;
+  --bg-card:              #FFFFFF;
+  --bg-glass:             rgba(255,255,255,0.55);
+  --bg-glass-dark:        rgba(255,255,255,0.06);
+  --accent-2:             #FF9838;
+  --accent-press:         #E55B00;
+  --blue:                 #5DB3CF;
+  --blue-soft:            rgba(93, 179, 207, 0.15);
+  --gradient-brand:       linear-gradient(135deg, #FF9838 0%, #FF5722 100%);
+  --gradient-glow:        radial-gradient(circle, rgba(255,152,56,0.18) 0%, transparent 70%);
+  --text-1:               #000000;
+  --text-2:               #6B7280;
+  --text-3:               #9CA3AF;
+  --text-on-dark:         #FFFFFF;
+  --text-on-accent:       #FFFFFF;
+  --border-subtle:        #E5E5E5;
+  --border-subtle-dark:   rgba(255,255,255,0.10);
+  --border-strong-dark:   rgba(255,255,255,0.20);
+  --glass:                rgba(0, 0, 0, 0.03);
+  --success:              #22c55e;
+  --green:                #22c55e;
+  --warning:              #f59e0b;
+  --danger:               #ef4444;
+  --shadow-glow:          0 0 40px rgba(255, 152, 56, 0.30);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #F5F3F0; }
+::-webkit-scrollbar-thumb { background: rgba(255, 152, 56, 0.40); border-radius: 3px; }
