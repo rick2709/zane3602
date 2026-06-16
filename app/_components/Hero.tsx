@@ -62,7 +62,7 @@ export default function Hero() {
           }}
         >
           Find your perfect domain,{' '}
-          <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>register instantly.</em>
+          <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>register instantly.</em>
         </motion.h1>
 
         {/* Domain search card */}
@@ -116,7 +116,7 @@ export default function Hero() {
                   border: '1px solid #E5E5E5',
                   transition: 'border-color 0.2s, background 0.2s',
                 }}
-                whileHover={{ borderColor: '#FF9838', background: '#FFF8F3' }}
+                whileHover={{ borderColor: '#e53e3e', background: '#FFF8F3' }}
                 whileTap={{ scale: 0.97 }}
               >
                 <span className="font-semibold" style={{ color: '#000' }}>{ext}</span>
@@ -157,7 +157,7 @@ export default function Hero() {
               <motion.a
                 href="#"
                 className="flex items-center gap-1 text-xs font-medium ml-1"
-                style={{ color: '#FF9838' }}
+                style={{ color: '#e53e3e' }}
                 whileHover={{ gap: '6px' }}
               >
                 See all pricing <ArrowRight size={11} />

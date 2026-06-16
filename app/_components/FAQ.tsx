@@ -44,7 +44,7 @@ function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
           animate={{ rotate: open ? 45 : 0 }}
           transition={{ duration: 0.2 }}
           className="flex-shrink-0"
-          style={{ color: open ? '#FF9838' : '#9CA3AF' }}
+          style={{ color: open ? '#e53e3e' : '#9CA3AF' }}
         >
           {open ? <Minus size={18} /> : <Plus size={18} />}
         </motion.div>
@@ -83,11 +83,11 @@ export default function FAQ() {
           </p>
           <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 4.5vw, 42px)', fontWeight: 400, lineHeight: 1.05, color: '#000' }}>
             Common{' '}
-            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>questions.</em>
+            <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>questions.</em>
           </h2>
           <p className="mt-4 text-base" style={{ color: '#6B7280', lineHeight: 1.6 }}>
             Can&apos;t find what you&apos;re looking for?{' '}
-            <a href="#contact" style={{ color: '#FF9838', textDecoration: 'underline', textUnderlineOffset: 3 }}>
+            <a href="#contact" style={{ color: '#e53e3e', textDecoration: 'underline', textUnderlineOffset: 3 }}>
               Talk to our team.
             </a>
           </p>

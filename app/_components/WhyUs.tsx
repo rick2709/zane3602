@@ -39,7 +39,7 @@ export default function WhyUs() {
               </p>
               <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 4.5vw, 42px)', fontWeight: 400, lineHeight: 1.05, color: '#000' }}>
                 The platform that{' '}
-                <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>never sleeps.</em>
+                <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>never sleeps.</em>
               </h2>
               <p className="mt-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400 }}>
                 We designed Zane360 around one principle: your digital assets deserve the same level of protection as your physical ones. Every feature exists to give you certainty.
@@ -86,9 +86,9 @@ export default function WhyUs() {
                   >
                     <div
                       className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
-                      style={{ background: 'rgba(255,152,56,0.10)' }}
+                      style={{ background: 'rgba(229,62,62,0.10)' }}
                     >
-                      <Icon size={18} style={{ color: '#FF9838' }} />
+                      <Icon size={18} style={{ color: '#e53e3e' }} />
                     </div>
                     <h3 className="mb-2" style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 15, fontWeight: 400 }}>{f.title}</h3>
                     <p className="leading-relaxed" style={{ color: '#6B7280', lineHeight: 1.65, fontFamily: 'var(--font-wix)', fontSize: 13 }}>{f.description}</p>

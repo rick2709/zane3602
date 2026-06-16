@@ -63,7 +63,7 @@ export default function Testimonials() {
           </p>
           <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 4.5vw, 42px)', fontWeight: 400, lineHeight: 1.05, color: '#000' }}>
             Trusted by{' '}
-            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>leaders.</em>
+            <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>leaders.</em>
           </h2>
         </motion.div>
 
@@ -84,7 +84,7 @@ export default function Testimonials() {
             >
               <div className="flex gap-1 mb-6">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i} style={{ color: '#FF9838', fontSize: '1rem' }}>★</span>
+                  <span key={i} style={{ color: '#e53e3e', fontSize: '1rem' }}>★</span>
                 ))}
               </div>
 
@@ -116,7 +116,7 @@ export default function Testimonials() {
                 key={i}
                 onClick={() => go(i)}
                 className="rounded-full transition-all duration-300"
-                style={{ width: i === current ? 24 : 8, height: 8, background: i === current ? '#FF9838' : '#E5E5E5' }}
+                style={{ width: i === current ? 24 : 8, height: 8, background: i === current ? '#e53e3e' : '#E5E5E5' }}
               />
             ))}
           </div>
@@ -127,7 +127,7 @@ export default function Testimonials() {
                 onClick={() => go(current + (idx === 0 ? -1 : 1))}
                 className="w-10 h-10 rounded-full flex items-center justify-center"
                 style={{
-                  background: idx === 1 ? '#FF9838' : '#F5F3F0',
+                  background: idx === 1 ? '#e53e3e' : '#F5F3F0',
                   color: idx === 1 ? '#FFF' : '#6B7280',
                   transition: 'background 0.2s',
                 }}

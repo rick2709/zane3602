@@ -63,7 +63,7 @@ export default function CyberShowcase() {
             }}
           >
             Enterprise-grade protection{' '}
-            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>for every business.</em>
+            <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>for every business.</em>
           </h2>
         </motion.div>
 
@@ -88,7 +88,7 @@ export default function CyberShowcase() {
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <p
                 className="uppercase mb-2"
-                style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}
+                style={{ color: '#e53e3e', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}
               >
                 Threat Intelligence
               </p>
@@ -120,7 +120,7 @@ export default function CyberShowcase() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-5">
-              <p className="uppercase mb-1" style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
+              <p className="uppercase mb-1" style={{ color: '#e53e3e', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
                 Education &amp; Compliance
               </p>
               <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 15, fontWeight: 400, color: '#fff' }}>
@@ -146,9 +146,9 @@ export default function CyberShowcase() {
               >
                 <div
                   className="w-8 h-8 rounded-lg flex items-center justify-center"
-                  style={{ background: 'rgba(255,152,56,0.12)' }}
+                  style={{ background: 'rgba(229,62,62,0.12)' }}
                 >
-                  <Icon size={15} color="#FF9838" />
+                  <Icon size={15} color="#e53e3e" />
                 </div>
                 <p className="text-xs font-semibold" style={{ color: '#000' }}>{label}</p>
                 <p className="text-xs leading-snug" style={{ color: '#9CA3AF' }}>{desc}</p>
@@ -172,7 +172,7 @@ export default function CyberShowcase() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-5">
-              <p className="uppercase mb-1" style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
+              <p className="uppercase mb-1" style={{ color: '#e53e3e', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
                 2025 Trends
               </p>
               <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 15, fontWeight: 400, color: '#fff' }}>
@@ -231,7 +231,7 @@ export default function CyberShowcase() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
           <div className="absolute inset-0 flex items-center">
             <div className="px-8 max-w-xl">
-              <p className="uppercase mb-3" style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
+              <p className="uppercase mb-3" style={{ color: '#e53e3e', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
                 Incident Response
               </p>
               <h3

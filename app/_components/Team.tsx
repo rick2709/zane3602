@@ -49,7 +49,7 @@ export default function Team() {
             </p>
             <h2 style={{ fontFamily: 'var(--font-plus-jakarta)', fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 400, color: '#000' }}>
               People behind{' '}
-              <em style={{ fontStyle: 'italic', color: '#FF9838' }}>Zane360.</em>
+              <em style={{ fontStyle: 'italic', color: '#e53e3e' }}>Zane360.</em>
             </h2>
           </div>
 
@@ -61,7 +61,7 @@ export default function Team() {
                 disabled={!can}
                 className="w-10 h-10 rounded-full flex items-center justify-center"
                 style={{
-                  background: can ? '#FF9838' : '#F5F3F0',
+                  background: can ? '#e53e3e' : '#F5F3F0',
                   color: can ? '#FFFFFF' : '#9CA3AF',
                   cursor: can ? 'pointer' : 'not-allowed',
                   transition: 'background 0.2s',
@@ -126,7 +126,7 @@ export default function Team() {
               key={i}
               onClick={() => setIndex(i)}
               className="rounded-full transition-all duration-300"
-              style={{ width: i === index ? 24 : 8, height: 8, background: i === index ? '#FF9838' : '#E5E5E5' }}
+              style={{ width: i === index ? 24 : 8, height: 8, background: i === index ? '#e53e3e' : '#E5E5E5' }}
             />
           ))}
         </div>

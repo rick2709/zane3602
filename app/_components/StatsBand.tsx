@@ -43,7 +43,7 @@ function StatCounter({ value, suffix, label, decimal }: {
     >
       <div
         className="mb-1"
-        style={{ color: '#FF9838', fontFamily: 'var(--font-miso)', fontSize: 48, fontWeight: 400 }}
+        style={{ color: '#e53e3e', fontFamily: 'var(--font-miso)', fontSize: 48, fontWeight: 400 }}
       >
         {decimal ? count.toFixed(count === value ? 1 : 0) : count}{suffix}
       </div>

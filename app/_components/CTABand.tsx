@@ -72,7 +72,7 @@ export default function CTABand() {
             }}
           >
             One platform.{' '}
-            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>Total protection.</em>
+            <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>Total protection.</em>
           </h2>
 
           <p className="leading-relaxed mb-8 max-w-md mx-auto" style={{ color: '#6B7280', fontFamily: 'var(--font-wix)', fontSize: 14 }}>

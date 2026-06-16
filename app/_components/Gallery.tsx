@@ -45,7 +45,7 @@ export default function Gallery() {
             </p>
             <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 4.5vw, 42px)', fontWeight: 400, lineHeight: 1.05, color: '#000' }}>
               Infrastructure built for{' '}
-              <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>scale.</em>
+              <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>scale.</em>
             </h2>
           </div>
 
@@ -61,7 +61,7 @@ export default function Gallery() {
                 className="px-5 py-2 text-xs font-semibold capitalize rounded-full"
                 style={{
                   background: activeTab === tab
-                    ? 'linear-gradient(135deg, #FF9838 0%, #FF5722 100%)'
+                    ? 'linear-gradient(135deg, #e53e3e 0%, #c53030 100%)'
                     : 'transparent',
                   color: activeTab === tab ? '#FFFFFF' : '#6B7280',
                   transition: 'color 0.2s',

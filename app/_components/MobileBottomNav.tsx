@@ -65,18 +65,18 @@ export default function MobileBottomNav() {
                 <motion.div
                   layoutId="mobile-nav-pill"
                   className="absolute inset-0 rounded-2xl"
-                  style={{ background: 'rgba(255,152,56,0.10)' }}
+                  style={{ background: 'rgba(229,62,62,0.10)' }}
                   transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                 />
               )}
               <Icon
                 size={20}
                 className="relative z-10"
-                style={{ color: isActive ? '#FF9838' : '#9CA3AF' }}
+                style={{ color: isActive ? '#e53e3e' : '#9CA3AF' }}
               />
               <span
                 className="relative z-10 text-[10px] font-semibold tracking-wide"
-                style={{ color: isActive ? '#FF9838' : '#9CA3AF', fontFamily: 'var(--font-wix)' }}
+                style={{ color: isActive ? '#e53e3e' : '#9CA3AF', fontFamily: 'var(--font-wix)' }}
               >
                 {label}
               </span>

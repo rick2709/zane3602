@@ -38,7 +38,7 @@ export default function About() {
                 }}
               >
                 Your digital identity,{' '}
-                <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>secured.</em>
+                <em style={{ fontStyle: 'normal', color: '#e53e3e' }}>secured.</em>
               </h2>
               <p className="mt-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400 }}>
                 Zane360 was built for businesses that understand the internet is where trust is won or lost. We combine world-class domain registration across 50+ country-code TLDs with enterprise-grade cybersecurity services — all from a single, unified dashboard.

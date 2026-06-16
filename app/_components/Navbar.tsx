@@ -41,7 +41,7 @@ export default function Navbar() {
           <a href="#" className="flex items-center gap-2.5">
             <div
               className="w-8 h-8 rounded-full flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg, #FF9838 0%, #FF5722 100%)' }}
+              style={{ background: 'linear-gradient(135deg, #e53e3e 0%, #c53030 100%)' }}
             >
               <Layers size={15} color="#FFFFFF" />
             </div>
