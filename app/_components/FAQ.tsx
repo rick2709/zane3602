@@ -36,7 +36,7 @@ function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
         style={{ background: 'none', border: 'none', cursor: 'pointer' }}
       >
         <span
-          style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300, lineHeight: 1.4 }}
+          style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400, lineHeight: 1.4 }}
         >
           {q}
         </span>
@@ -78,10 +78,10 @@ export default function FAQ() {
           viewport={{ once: true }} transition={{ duration: 0.5 }}
           className="mb-14"
         >
-          <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
+          <p className="uppercase mb-4" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
             FAQ
           </p>
-          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3.5vw, 42px)', fontWeight: 400, color: '#000' }}>
+          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 42, fontWeight: 400, color: '#000' }}>
             Common{' '}
             <em style={{ fontStyle: 'italic', color: '#FF9838' }}>questions.</em>
           </h2>

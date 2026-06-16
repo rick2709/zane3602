@@ -47,15 +47,15 @@ export default function CyberShowcase() {
           className="mb-12 lg:mb-16"
         >
           <p
-            className="text-xs font-semibold uppercase tracking-widest mb-4"
-            style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}
+            className="uppercase mb-4"
+            style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}
           >
             Cybersecurity
           </p>
           <h2
             style={{
               fontFamily: 'var(--font-miso)',
-              fontSize: 'clamp(32px, 3.5vw, 44px)',
+              fontSize: 42,
               fontWeight: 400,
               lineHeight: 1.15,
               color: '#000',
@@ -87,14 +87,14 @@ export default function CyberShowcase() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <p
-                className="text-xs font-semibold uppercase tracking-widest mb-2"
-                style={{ color: '#FF9838', letterSpacing: '0.10em' }}
+                className="uppercase mb-2"
+                style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}
               >
                 Threat Intelligence
               </p>
               <h3
                 className="font-normal text-white mb-2"
-                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300, lineHeight: 1.3 }}
+                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400, lineHeight: 1.3 }}
               >
                 Global threat monitoring, around the clock
               </h3>
@@ -120,10 +120,10 @@ export default function CyberShowcase() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-5">
-              <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#FF9838', letterSpacing: '0.10em' }}>
+              <p className="uppercase mb-1" style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
                 Education &amp; Compliance
               </p>
-              <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 18, fontWeight: 300, color: '#fff' }}>
+              <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 15, fontWeight: 400, color: '#fff' }}>
                 Security awareness for your entire team
               </h3>
             </div>
@@ -172,10 +172,10 @@ export default function CyberShowcase() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-5">
-              <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#FF9838', letterSpacing: '0.10em' }}>
+              <p className="uppercase mb-1" style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
                 2025 Trends
               </p>
-              <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 18, fontWeight: 300, color: '#fff' }}>
+              <h3 style={{ fontFamily: 'var(--font-miso)', fontSize: 15, fontWeight: 400, color: '#fff' }}>
                 Ahead of emerging threats
               </h3>
             </div>
@@ -191,7 +191,7 @@ export default function CyberShowcase() {
             style={{ background: '#0F0F0F', minHeight: 200 }}
           >
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest mb-6" style={{ color: 'rgba(255,255,255,0.4)', letterSpacing: '0.10em' }}>
+              <p className="uppercase mb-6" style={{ color: 'rgba(255,255,255,0.4)', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
                 Platform stats
               </p>
               <div className="flex flex-col gap-4">
@@ -201,7 +201,7 @@ export default function CyberShowcase() {
                   { num: '50+', label: 'Countries served' },
                 ].map(({ num, label }) => (
                   <div key={label}>
-                    <p className="text-2xl font-light text-white" style={{ fontFamily: 'var(--font-miso)' }}>{num}</p>
+                    <p style={{ fontFamily: 'var(--font-miso)', fontSize: 48, fontWeight: 400, color: '#fff' }}>{num}</p>
                     <p className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.45)' }}>{label}</p>
                   </div>
                 ))}
@@ -231,12 +231,12 @@ export default function CyberShowcase() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
           <div className="absolute inset-0 flex items-center">
             <div className="px-8 max-w-xl">
-              <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#FF9838', letterSpacing: '0.10em' }}>
+              <p className="uppercase mb-3" style={{ color: '#FF9838', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
                 Incident Response
               </p>
               <h3
                 className="font-normal text-white mb-2"
-                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300, lineHeight: 1.3 }}
+                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400, lineHeight: 1.3 }}
               >
                 When it matters most, we respond in 15 minutes.
               </h3>

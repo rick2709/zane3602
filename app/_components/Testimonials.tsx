@@ -58,10 +58,10 @@ export default function Testimonials() {
           viewport={{ once: true }} transition={{ duration: 0.5 }}
           className="text-center mb-14"
         >
-          <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
+          <p className="uppercase mb-4" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
             Testimonials
           </p>
-          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3.5vw, 42px)', fontWeight: 400, color: '#000' }}>
+          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 42, fontWeight: 400, color: '#000' }}>
             Trusted by{' '}
             <em style={{ fontStyle: 'italic', color: '#FF9838' }}>leaders.</em>
           </h2>
@@ -90,7 +90,7 @@ export default function Testimonials() {
 
               <p
                 className="leading-relaxed mb-8"
-                style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300 }}
+                style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400 }}
               >
                 &ldquo;{t.quote}&rdquo;
               </p>

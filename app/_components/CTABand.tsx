@@ -57,14 +57,14 @@ export default function CTABand() {
             textAlign: 'center',
           }}
         >
-          <p className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
+          <p className="uppercase mb-5" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
             Get Started Today
           </p>
 
           <h2
             style={{
               fontFamily: 'var(--font-miso)',
-              fontSize: 'clamp(36px, 4vw, 48px)',
+              fontSize: 42,
               fontWeight: 400,
               lineHeight: 1.15,
               color: '#000',

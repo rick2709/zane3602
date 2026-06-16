@@ -42,8 +42,8 @@ function StatCounter({ value, suffix, label, decimal }: {
       className="text-center"
     >
       <div
-        className="text-4xl sm:text-5xl font-semibold tracking-tight mb-1"
-        style={{ color: '#FF9838', fontFamily: 'var(--font-miso)' }}
+        className="mb-1"
+        style={{ color: '#FF9838', fontFamily: 'var(--font-miso)', fontSize: 48, fontWeight: 400 }}
       >
         {decimal ? count.toFixed(count === value ? 1 : 0) : count}{suffix}
       </div>
@@ -59,8 +59,8 @@ export default function StatsBand() {
 
         {/* Trusted by */}
         <p
-          className="text-center text-xs font-semibold uppercase tracking-widest mb-8"
-          style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}
+          className="text-center uppercase mb-8"
+          style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}
         >
           Trusted by companies worldwide
         </p>

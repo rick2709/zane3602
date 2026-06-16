@@ -40,8 +40,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.5, ease }}
-          className="text-xs font-semibold uppercase tracking-widest mb-6"
-          style={{ color: '#232529', letterSpacing: '0.12em' }}
+          className="uppercase mb-6"
+          style={{ color: '#232529', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}
         >
           International Domains &amp; Cybersecurity
         </motion.p>

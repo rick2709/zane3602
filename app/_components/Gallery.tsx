@@ -40,10 +40,10 @@ export default function Gallery() {
           className="flex flex-col sm:flex-row sm:items-center justify-between gap-6"
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}>
+            <p className="uppercase mb-3" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
               In Action
             </p>
-            <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 3vw, 38px)', fontWeight: 400, color: '#000' }}>
+            <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 38, fontWeight: 400, color: '#000' }}>
               Infrastructure built for{' '}
               <em style={{ fontStyle: 'italic', color: '#FF9838' }}>scale.</em>
             </h2>

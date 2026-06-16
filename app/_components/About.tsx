@@ -23,15 +23,15 @@ export default function About() {
             {/* Left */}
             <div>
               <p
-                className="text-xs font-semibold uppercase tracking-widest mb-6"
-                style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}
+                className="uppercase mb-6"
+                style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}
               >
                 01 / 04
               </p>
               <h2
                 style={{
                   fontFamily: 'var(--font-miso)',
-                  fontSize: 'clamp(32px, 4vw, 42px)',
+                  fontSize: 42,
                   fontWeight: 400,
                   lineHeight: 1.15,
                   color: '#000000',
@@ -40,7 +40,7 @@ export default function About() {
                 Your digital identity,{' '}
                 <em style={{ fontStyle: 'italic', color: '#FF9838' }}>secured.</em>
               </h2>
-              <p className="mt-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 300 }}>
+              <p className="mt-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400 }}>
                 Zane360 was built for businesses that understand the internet is where trust is won or lost. We combine world-class domain registration across 50+ country-code TLDs with enterprise-grade cybersecurity services — all from a single, unified dashboard.
               </p>
               <p className="mt-4 text-base leading-relaxed" style={{ color: '#6B7280' }}>
