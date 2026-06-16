@@ -5,7 +5,7 @@ import About from './_components/About'
 import Services from './_components/Services'
 import BannerStrip from './_components/BannerStrip'
 import WhyUs from './_components/WhyUs'
-import Team from './_components/Team'
+import CyberShowcase from './_components/CyberShowcase'
 import Gallery from './_components/Gallery'
 import Testimonials from './_components/Testimonials'
 import FAQ from './_components/FAQ'
@@ -24,7 +24,7 @@ export default function Home() {
         <Services />
         <BannerStrip />
         <WhyUs />
-        <Team />
+        <CyberShowcase />
         <BannerStrip />
         <Gallery />
         <Testimonials />

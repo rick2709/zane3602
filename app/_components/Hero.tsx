@@ -1,18 +1,25 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Plus, Mic, ArrowRight } from 'lucide-react'
+import { Search, ArrowRight } from 'lucide-react'
 
 const ease = [0.16, 1, 0.3, 1] as [number, number, number, number]
 
-const suggestions = [
-  'Register a .com domain with WHOIS privacy',
-  'Set up enterprise SSL certificates',
-  'Get 24/7 threat monitoring',
-  'Protect against DDoS attacks',
+const tldPricing = [
+  { ext: '.com', price: '$12.99/yr' },
+  { ext: '.co.zw', price: '$8.99/yr' },
+  { ext: '.africa', price: '$14.99/yr' },
+  { ext: '.org', price: '$10.99/yr' },
+  { ext: '.net', price: '$11.99/yr' },
+  { ext: '.io', price: '$39.99/yr' },
 ]
 
+const popularExtensions = ['.com', '.africa', '.co.zw', '.io', '.tech', '.ai', '.org', '.net']
+
 export default function Hero() {
+  const [query, setQuery] = useState('')
+
   return (
     <section
       id="hero"
@@ -22,17 +29,17 @@ export default function Hero() {
           'radial-gradient(97.22% 78.13% at 50% -17.36%, rgb(93,179,207) 22%, rgba(145,201,220,0.56) 58%, rgba(250,249,247,0) 86%), linear-gradient(rgb(34,201,255) -26%, rgb(250,249,247) 24%)',
       }}
     >
-      {/* Spacer so content clears the floating navbar */}
+      {/* Spacer for floating navbar */}
       <div style={{ height: 88 }} />
 
       {/* Centered content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-4 pb-24">
+      <div className="flex-1 flex flex-col items-center justify-center px-4 pb-20">
 
         {/* Category label */}
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.18, duration: 0.5, ease }}
+          transition={{ delay: 0.15, duration: 0.5, ease }}
           className="text-xs font-semibold uppercase tracking-widest mb-6"
           style={{ color: '#232529', letterSpacing: '0.12em' }}
         >
@@ -43,126 +50,119 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.28, duration: 0.65, ease }}
-          className="text-center mb-10"
+          transition={{ delay: 0.25, duration: 0.65, ease }}
+          className="text-center mb-8"
           style={{
             fontFamily: 'var(--font-plus-jakarta)',
-            fontSize: 'clamp(38px, 5.5vw, 60px)',
+            fontSize: 'clamp(36px, 5.5vw, 58px)',
             fontWeight: 400,
             lineHeight: 1.1,
             color: '#000000',
             maxWidth: 620,
           }}
         >
-          Secure your digital presence,{' '}
-          <em style={{ fontStyle: 'italic', color: '#FF9838' }}>effortlessly.</em>
+          Find your perfect domain,{' '}
+          <em style={{ fontStyle: 'italic', color: '#FF9838' }}>register instantly.</em>
         </motion.h1>
 
-        {/* Input card */}
+        {/* Domain search card */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.42, duration: 0.65, ease }}
+          transition={{ delay: 0.38, duration: 0.65, ease }}
           className="w-full"
           style={{
-            maxWidth: 600,
+            maxWidth: 640,
             background: '#FFFFFF',
             borderRadius: 20,
             boxShadow: '0 4px 24px rgba(0,0,0,0.08)',
-            padding: '20px 24px',
-            marginBottom: 20,
+            padding: '20px 20px 16px',
           }}
         >
-          <textarea
-            rows={3}
-            placeholder="What domain or security solution are you looking for today?"
-            className="w-full resize-none outline-none text-base"
-            style={{
-              border: 'none',
-              background: 'transparent',
-              color: '#000',
-              fontFamily: 'var(--font-inter)',
-              lineHeight: 1.6,
-            }}
-          />
-
-          {/* Action row */}
-          <div
-            className="flex items-center gap-3 mt-3 pt-3"
-            style={{ borderTop: '1px solid #F0F0F0' }}
-          >
-            <button
-              className="w-8 h-8 rounded-full flex items-center justify-center transition-colors"
-              style={{ background: '#F5F3F0' }}
-              onMouseEnter={e => (e.currentTarget.style.background = '#EBEBEB')}
-              onMouseLeave={e => (e.currentTarget.style.background = '#F5F3F0')}
+          {/* Search row */}
+          <div className="flex gap-2 mb-4">
+            <div
+              className="flex-1 flex items-center gap-3 px-4 rounded-xl"
+              style={{ border: '1.5px solid #E5E5E5', background: '#FAFAFA' }}
             >
-              <Plus size={15} color="#6B7280" />
-            </button>
-
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-4 rounded-full relative" style={{ background: '#E5E5E5' }}>
-                <div
-                  className="w-3 h-3 rounded-full absolute top-0.5 left-0.5"
-                  style={{ background: '#FFF', boxShadow: '0 1px 3px rgba(0,0,0,0.2)' }}
-                />
-              </div>
-              <span className="text-xs" style={{ color: '#9CA3AF' }}>Plan</span>
+              <Search size={16} color="#9CA3AF" style={{ flexShrink: 0 }} />
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search for your perfect domain…"
+                className="flex-1 py-3 text-sm outline-none bg-transparent"
+                style={{ color: '#000', fontFamily: 'var(--font-inter)' }}
+              />
             </div>
-
-            <div className="flex-1" />
-
-            <button
-              className="w-8 h-8 rounded-full flex items-center justify-center transition-colors"
-              style={{ background: '#F5F3F0' }}
-              onMouseEnter={e => (e.currentTarget.style.background = '#EBEBEB')}
-              onMouseLeave={e => (e.currentTarget.style.background = '#F5F3F0')}
-            >
-              <Mic size={14} color="#6B7280" />
-            </button>
-
             <motion.button
-              className="w-10 h-10 rounded-full flex items-center justify-center"
-              style={{ background: '#FF5722' }}
-              whileHover={{ scale: 1.08, background: '#E64A19' }}
-              whileTap={{ scale: 0.94 }}
+              className="px-6 py-3 text-sm font-semibold text-white rounded-xl whitespace-nowrap"
+              style={{ background: '#0F0F0F' }}
+              whileHover={{ background: '#333', scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
             >
-              <ArrowRight size={17} color="#FFFFFF" />
+              Search
             </motion.button>
           </div>
-        </motion.div>
 
-        {/* Suggestion chips */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.62, duration: 0.55 }}
-          className="flex flex-col items-center gap-3"
-        >
-          <span
-            className="text-xs font-semibold uppercase tracking-widest"
-            style={{ color: '#9CA3AF', letterSpacing: '0.12em' }}
-          >
-            Not sure where to start? Try one of these:
-          </span>
-          <div className="flex flex-wrap justify-center gap-2 max-w-xl">
-            {suggestions.map((s) => (
+          {/* TLD pricing row */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            {tldPricing.map(({ ext, price }) => (
               <motion.button
-                key={s}
-                className="px-4 py-2 text-xs font-medium"
+                key={ext}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs"
                 style={{
-                  background: '#FFFFFF',
-                  border: '1px solid #E0E0E0',
-                  borderRadius: 999,
-                  color: '#232529',
-                  transition: 'border-color 0.2s, color 0.2s',
+                  background: '#FAF9F7',
+                  border: '1px solid #E5E5E5',
+                  transition: 'border-color 0.2s, background 0.2s',
                 }}
-                whileHover={{ borderColor: '#FF9838', color: '#FF9838', scale: 1.02 }}
+                whileHover={{ borderColor: '#FF9838', background: '#FFF8F3' }}
                 whileTap={{ scale: 0.97 }}
               >
-                {s}
+                <span className="font-semibold" style={{ color: '#000' }}>{ext}</span>
+                <span style={{ color: '#9CA3AF' }}>{price}</span>
               </motion.button>
             ))}
+          </div>
+
+          {/* Divider */}
+          <div style={{ height: 1, background: '#F0F0F0', marginBottom: 14 }} />
+
+          {/* Popular extensions */}
+          <div>
+            <p
+              className="text-xs font-semibold uppercase mb-3"
+              style={{ color: '#9CA3AF', letterSpacing: '0.10em' }}
+            >
+              Popular extensions
+            </p>
+            <div className="flex flex-wrap items-center gap-2">
+              {popularExtensions.map((ext) => (
+                <motion.button
+                  key={ext}
+                  onClick={() => setQuery(ext)}
+                  className="px-3 py-1.5 text-xs font-medium rounded-full"
+                  style={{
+                    background: '#F5F3F0',
+                    border: '1px solid #E5E5E5',
+                    color: '#232529',
+                    transition: 'all 0.15s',
+                  }}
+                  whileHover={{ background: '#EBFFB1', borderColor: '#ADE900', color: '#000' }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {ext}
+                </motion.button>
+              ))}
+              <motion.a
+                href="#"
+                className="flex items-center gap-1 text-xs font-medium ml-1"
+                style={{ color: '#FF9838' }}
+                whileHover={{ gap: '6px' }}
+              >
+                See all pricing <ArrowRight size={11} />
+              </motion.a>
+            </div>
           </div>
         </motion.div>
       </div>
