@@ -54,15 +54,15 @@ export default function Hero() {
           className="text-center mb-8"
           style={{
             fontFamily: 'var(--font-miso)',
-            fontSize: 42,
+            fontSize: 'clamp(36px, 5vw, 48px)',
             fontWeight: 400,
-            lineHeight: 1.1,
+            lineHeight: 1,
             color: '#000000',
             maxWidth: 620,
           }}
         >
           Find your perfect domain,{' '}
-          <em style={{ fontStyle: 'italic', color: '#FF9838' }}>register instantly.</em>
+          <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>register instantly.</em>
         </motion.h1>
 
         {/* Domain search card */}

@@ -1,5 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Miso:wght@300;400&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+
+/* Miso — exact font files used by Base44 */
+@font-face {
+  font-family: 'Miso';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.wixstatic.com/ufonts/343a2a_5b4cd32fc19d46e1b8c1b142abb27d39/woff2/file.woff2') format('woff2'),
+       url('https://static.wixstatic.com/ufonts/343a2a_5b4cd32fc19d46e1b8c1b142abb27d39/woff/file.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Miso';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.wixstatic.com/ufonts/343a2a_4e484da66ffc4465a05a1c9ea5caf495/woff2/file.woff2') format('woff2'),
+       url('https://static.wixstatic.com/ufonts/343a2a_4e484da66ffc4465a05a1c9ea5caf495/woff/file.woff') format('woff');
+}
 
 @theme inline {
   --font-sans: var(--font-wix);
@@ -74,20 +93,27 @@ html { scroll-behavior: smooth; }
 
 /* ── Base typography ── */
 h1 {
-  font-family: var(--font-miso);
-  font-size: 42px;
+  font-family: 'Miso', sans-serif;
+  font-size: clamp(36px, 5vw, 48px);
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1;
 }
 h2 {
-  font-family: var(--font-miso);
-  font-size: 42px;
+  font-family: 'Miso', sans-serif;
+  font-size: clamp(32px, 4.5vw, 42px);
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.05;
 }
 h3 {
-  font-family: var(--font-miso);
-  font-size: 22px;
+  font-family: 'Miso', sans-serif;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+h1 em, h1 i, h2 em, h2 i {
+  font-style: normal;
+  color: #F76A1A;
+  font-family: 'Miso', sans-serif;
   font-weight: 400;
 }
 p, body {

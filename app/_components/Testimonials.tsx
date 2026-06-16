@@ -61,9 +61,9 @@ export default function Testimonials() {
           <p className="uppercase mb-4" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
             Testimonials
           </p>
-          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 42, fontWeight: 400, color: '#000' }}>
+          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 4.5vw, 42px)', fontWeight: 400, lineHeight: 1.05, color: '#000' }}>
             Trusted by{' '}
-            <em style={{ fontStyle: 'italic', color: '#FF9838' }}>leaders.</em>
+            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>leaders.</em>
           </h2>
         </motion.div>
 

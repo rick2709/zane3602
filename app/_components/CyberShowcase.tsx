@@ -55,15 +55,15 @@ export default function CyberShowcase() {
           <h2
             style={{
               fontFamily: 'var(--font-miso)',
-              fontSize: 42,
+              fontSize: 'clamp(32px, 4.5vw, 42px)',
               fontWeight: 400,
-              lineHeight: 1.15,
+              lineHeight: 1.05,
               color: '#000',
               maxWidth: 560,
             }}
           >
             Enterprise-grade protection{' '}
-            <em style={{ fontStyle: 'italic', color: '#FF9838' }}>for every business.</em>
+            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>for every business.</em>
           </h2>
         </motion.div>
 
@@ -94,7 +94,7 @@ export default function CyberShowcase() {
               </p>
               <h3
                 className="font-normal text-white mb-2"
-                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400, lineHeight: 1.3 }}
+                style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(18px, 2.5vw, 22px)', fontWeight: 400, lineHeight: 1.2 }}
               >
                 Global threat monitoring, around the clock
               </h3>
@@ -236,7 +236,7 @@ export default function CyberShowcase() {
               </p>
               <h3
                 className="font-normal text-white mb-2"
-                style={{ fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400, lineHeight: 1.3 }}
+                style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(18px, 2.5vw, 22px)', fontWeight: 400, lineHeight: 1.2 }}
               >
                 When it matters most, we respond in 15 minutes.
               </h3>

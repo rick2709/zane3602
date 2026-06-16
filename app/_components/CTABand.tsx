@@ -64,15 +64,15 @@ export default function CTABand() {
           <h2
             style={{
               fontFamily: 'var(--font-miso)',
-              fontSize: 42,
+              fontSize: 'clamp(32px, 4.5vw, 42px)',
               fontWeight: 400,
-              lineHeight: 1.15,
+              lineHeight: 1.05,
               color: '#000',
               marginBottom: 16,
             }}
           >
             One platform.{' '}
-            <em style={{ fontStyle: 'italic', color: '#FF9838' }}>Total protection.</em>
+            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>Total protection.</em>
           </h2>
 
           <p className="leading-relaxed mb-8 max-w-md mx-auto" style={{ color: '#6B7280', fontFamily: 'var(--font-wix)', fontSize: 14 }}>

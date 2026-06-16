@@ -36,7 +36,7 @@ function FAQItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
         style={{ background: 'none', border: 'none', cursor: 'pointer' }}
       >
         <span
-          style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400, lineHeight: 1.4 }}
+          style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 'clamp(18px, 2.5vw, 22px)', fontWeight: 400, lineHeight: 1.2 }}
         >
           {q}
         </span>
@@ -81,9 +81,9 @@ export default function FAQ() {
           <p className="uppercase mb-4" style={{ color: '#9CA3AF', fontFamily: 'var(--font-wix)', fontSize: 12, fontWeight: 500, letterSpacing: '0.08em' }}>
             FAQ
           </p>
-          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 42, fontWeight: 400, color: '#000' }}>
+          <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 4.5vw, 42px)', fontWeight: 400, lineHeight: 1.05, color: '#000' }}>
             Common{' '}
-            <em style={{ fontStyle: 'italic', color: '#FF9838' }}>questions.</em>
+            <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>questions.</em>
           </h2>
           <p className="mt-4 text-base" style={{ color: '#6B7280', lineHeight: 1.6 }}>
             Can&apos;t find what you&apos;re looking for?{' '}

@@ -31,14 +31,14 @@ export default function About() {
               <h2
                 style={{
                   fontFamily: 'var(--font-miso)',
-                  fontSize: 42,
+                  fontSize: 'clamp(32px, 4.5vw, 42px)',
                   fontWeight: 400,
-                  lineHeight: 1.15,
+                  lineHeight: 1.05,
                   color: '#000000',
                 }}
               >
                 Your digital identity,{' '}
-                <em style={{ fontStyle: 'italic', color: '#FF9838' }}>secured.</em>
+                <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>secured.</em>
               </h2>
               <p className="mt-5 leading-relaxed" style={{ color: '#6B7280', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400 }}>
                 Zane360 was built for businesses that understand the internet is where trust is won or lost. We combine world-class domain registration across 50+ country-code TLDs with enterprise-grade cybersecurity services — all from a single, unified dashboard.

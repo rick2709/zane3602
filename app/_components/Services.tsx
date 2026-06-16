@@ -59,9 +59,9 @@ export default function Services() {
             02 / 04 — Our Services
           </p>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 42, fontWeight: 400, color: '#000', maxWidth: 480 }}>
+            <h2 style={{ fontFamily: 'var(--font-miso)', fontSize: 'clamp(32px, 4.5vw, 42px)', fontWeight: 400, lineHeight: 1.05, color: '#000', maxWidth: 480 }}>
               Everything you need,{' '}
-              <em style={{ fontStyle: 'italic', color: '#FF9838' }}>in one place.</em>
+              <em style={{ fontStyle: 'normal', color: '#F76A1A' }}>in one place.</em>
             </h2>
             <p className="text-sm max-w-xs" style={{ color: '#6B7280', lineHeight: 1.6 }}>
               From your first domain to enterprise-grade threat defence — Zane360 covers every layer of your digital presence.
@@ -98,7 +98,7 @@ export default function Services() {
                   <Icon size={20} style={{ color: '#FF9838' }} />
                 </div>
 
-                <h3 className="mb-2" style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 22, fontWeight: 400 }}>
+                <h3 className="mb-2" style={{ color: '#000', fontFamily: 'var(--font-miso)', fontSize: 'clamp(18px, 2.5vw, 22px)', fontWeight: 400, lineHeight: 1.2 }}>
                   {service.title}
                 </h3>
                 <p className="leading-relaxed mb-5" style={{ color: '#6B7280', fontFamily: 'var(--font-wix)', fontSize: 14 }}>{service.description}</p>
